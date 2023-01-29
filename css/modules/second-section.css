@@ -1,0 +1,36 @@
+
+
+.second__section{
+    background: #3a3a3a;
+    padding: 75px 0;
+}
+
+.second__section .second__wrapper{
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+}
+
+.second__section .realisations{
+    text-transform: uppercase;
+    color: #9D84B8;
+    font-family: 'Roboto', sans-serif;
+}
+
+.second__section .second__body{
+    max-width: 596px;
+}
+
+.second__section .second__body .second__button{
+    width: 170px;
+    height: 40px;
+    margin-top: 35px;
+}
+
+
+@media (max-width: 1023px) {
+    .second__section .second__wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

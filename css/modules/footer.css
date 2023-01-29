@@ -1,0 +1,134 @@
+
+.footer{
+    background: #212025;
+    margin-top: 100px;
+}
+
+
+.footer .container{
+    position: relative;
+    padding-top: 80px;
+}
+
+
+.footer .container .arrow-move__top{
+    position: absolute;
+    right: 40px;
+    bottom: 62px;
+    cursor: pointer;
+}
+
+
+.footer .footer__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 35px;
+}
+
+
+.footer .footer__top .link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .footer__top .link .logo{
+    color: #9D84B8;
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 48px;
+}
+
+
+.footer .footer__top .footer__text{
+    color: white;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.footer .footer__top .footer__text span{
+    color: #9D84B8;
+}
+
+
+.footer .footer__top .footer__social{
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 256px;
+}
+
+
+
+
+.footer .subfooter{
+    max-width: 1080px;
+    border-top: 1px solid #CDCDCD;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.footer .subfooter .subfooter__policy .policy{
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+
+.footer .subfooter .subfooter__copyright{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    color: white;
+}
+
+.footer .footer__top .gmail, .footer .footer__top .telegram, .footer .footer__top .whatsapp{
+    width: 32px;
+    height: 32px;
+}
+
+.footer .footer__top .gmail img, .footer .footer__top .telegram img, .footer .footer__top .whatsapp img{
+    width: 100%;
+}
+
+
+@media (max-width: 1023px) {
+    .footer{
+        margin-top: 50px;
+    }
+    .footer .footer__top .footer__social{
+        margin-right: 100px;
+        gap: 20px;
+    }
+    .footer .footer__top .footer__text{
+        font-size: 12px;
+    }
+    .footer .footer__top .gmail, .footer .footer__top .telegram, .footer .footer__top .whatsapp{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .footer .container{
+        padding: 0;
+    }
+    .footer .footer__top{
+        padding: 15px 13px;
+        flex-direction: column;
+        align-items: start;
+        gap: 25px;
+    }
+    .footer .container .arrow-move__top{
+        display: none;
+    } 
+    
+}

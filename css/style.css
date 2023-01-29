@@ -1,0 +1,134 @@
+@import url('modules/reboot.css');
+@import url('modules/fonts.css');
+@import url('modules/header.css');
+@import url('modules/footer.css');
+@import url('modules/intro.css');
+@import url('modules/infinity-slider.css');
+@import url('modules/second-section.css');
+@import url('modules/third-section.css');
+@import url('modules/stages-work.css');
+@import url('modules/about.css');
+@import url('modules/portfolio.css');
+@import url('modules/portfolio__item.css');
+@import url('modules/policy.css');
+@import url('modules/animation.css');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    cursor: none !important;
+}
+
+body{
+    background: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body.active{
+    overflow: hidden;
+}
+
+main{
+    flex: 1 0 auto;
+}
+footer{
+    flex: 0 0 auto;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: white;
+    letter-spacing: .25em;
+    line-height: 120%;
+}
+
+.title__black{
+    color: #000;
+}
+
+.descr{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #CDCDCD;
+    letter-spacing: .05em;
+    line-height: 140%;
+}
+
+.button{
+    border: 1px solid #9D84B8;
+    color: #9D84B8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background: none;
+    border-radius: 10px;
+}
+
+.fw__600{
+    font-weight: 600;
+}
+
+
+.border__none{
+    border: none;
+}
+
+
+#cursor{
+    position: fixed;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    z-index: 10000;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(3px, -25px);
+    transition: width 1s, height 1s, background-color 2s,top 1s, left 1s;
+    top: -7px;
+    left: -7px;
+
+}
+
+#cursor.active{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(198, 101, 246);
+    transition: width 1s, height 1s, background-color 2s, top 1s, left 1s;
+    top: -35px;
+    left: -35px;
+}
+
+@media (max-width: 1023px) {
+    .container{
+        padding: 30px;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .descr{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container{
+        padding: 15px;
+    }
+    .title{
+        font-size: 16px;
+    }
+}

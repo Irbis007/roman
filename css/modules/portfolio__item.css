@@ -1,0 +1,327 @@
+.portfolio__item-intro{
+    padding: 580px 0 100px 0;
+}
+
+.portfolio__item-intro.nike__intro{
+    background: url('../../img/nike.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.cinema__intro{
+    background: url('../../img/cinema-img/cinema.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.ice-cream__intro{
+    background: url('../../img/icecream.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.bread__intro{
+    background: url('../../img/bread.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.truck__intro{
+    background: url('../../img/truck.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.auto__intro{
+    background: url('../../img/auto.jpg') center center / cover no-repeat;
+}
+.portfolio__item-intro.dashboard__intro{
+    background: url('../../img/graph.jpg') center center / cover no-repeat;
+}
+
+.portfolio__item-intro.nike__intro .portfolio__intro-title{
+    color: #5CBE3A;
+}
+
+.portfolio__item-intro .portfolio__intro-title{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.portfolio__item-intro svg{
+    fill: #fff;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.portfolio__item-intro.nike__intro svg{
+    fill: #212025;
+}
+
+
+.portfolio__item-text{
+    margin-top: 165px;
+}
+
+.portfolio__item-text .container{
+    display: flex;
+    max-width: 945px;
+    justify-content: space-between;
+}
+
+.portfolio__item-text .text__subtitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 110%;
+}
+
+.portfolio__item-text .text__body{
+    max-width: 645px;
+}
+
+.cinema .portfolio__item-text .text__title, .ice__cream .portfolio__item-text .text__title{
+    color: white;
+}
+
+.portfolio__item-text .text__title{
+    color: #212025;
+    text-transform: uppercase;
+}
+
+.cinema .portfolio__item-text .text__descr, .ice__cream .portfolio__item-text .text__descr{
+    color: white;
+}
+
+.portfolio__item-text .text__descr{
+    color: #000;
+    font-size: 16px;
+    letter-spacing: .05em;
+    margin-top: 10px;
+}
+
+.portfolio__item-img{
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 885px;
+}
+
+.portfolio__item-img img{
+    width: 100%;
+}
+
+.portfolio__item-slider{
+    margin-top: 100px;
+}
+
+.portfolio__item-slider .slider__item-wrapper img{
+    width: 100%;
+}
+
+.cinema-mac{
+    width: 100%;
+    margin-top: 100px;
+}
+.cinema-mac img{
+    width: 100%;
+}
+
+body.cinema, body.ice__cream{
+    background: #3a3a3a;
+    color: white;
+}
+
+
+.portfolio__cinema-block{
+    background: #212025;
+    padding: 145px 40px;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.portfolio__cinema-block .portfolio__cinema-wrapper{
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.portfolio__cinema-block .portfolio__cinema-title{
+    font-size: 16px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.portfolio__cinema-block .portfolio__cinema-img{
+    margin-top: 10px;
+}
+
+.portfolio__cinema-block .portfolio__cinema-img img{
+    border: 4px solid #9D84B8;
+    border-top: 5px solid #9D84B8;
+    border-bottom: 5px solid #9D84B8;
+    border-radius: 10px;
+}
+
+.portfolio__cinema-block .portfolio__cinema-img img{
+    width: 100%;
+}
+
+.portfolio__cinema-block .phone__images{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: space-between;
+}
+
+.portfolio__cinema-block .phone__images img{
+    border: none;
+}
+
+.portfolio__item-text .text__list{
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.portfolio__item-text .text__list .item{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    list-style-type: disc;
+    line-height: 140%;
+}
+
+.portfolio__item-text .text__subtitle{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+.bread__second-section{
+    margin-top: 100px;
+}
+
+.bread__second-section .container{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    grid-template-rows: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bread__second-section .bread__section-text{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+
+.bread__second-section .bread__second-img{
+    width: 100%;
+    height: 100%;
+}
+
+.bread__second-section .bread__second-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.bread__second-section .img-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.bread__second-section .img-2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+.bread__second-section .img-3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.auto__container{
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 10px));
+    justify-content: space-between;
+    row-gap: 20px;
+    padding-top: 100px;
+}
+
+
+.auto__container .img__portfolio img{
+    width: 100%;
+}
+
+.auto__container .img__portfolio-1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.auto__container .img__portfolio-2{
+    grid-column: 2/3;
+}
+
+
+
+
+@media (max-width: 1023px) {
+    .portfolio__item-slider{
+        margin-top: 50px;
+    }
+    .portfolio__item-text{
+        margin-top: 50px;
+    }
+    .portfolio__item-text .text__body{
+        max-width: 490px;
+    }
+    .portfolio__item-text .text__descr{
+        font-size: 12px;
+    }
+    .portfolio__item-text .text__subtitle{
+        font-size: 16px;
+    }
+    .portfolio__item-img{
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    .portfolio__cinema-block{
+        padding: 0;
+        background: none;
+    }
+    .bread__second-section{
+        margin-top: 50px;
+    }
+    .bread__second-section .bread__section-text{
+        font-size: 12px;
+    }
+    .auto__container{
+        padding-top: 50px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .portfolio__item-intro .portfolio__intro-title{
+        font-size: 16px;
+    }
+    .portfolio__item-intro.nike__intro{
+        padding: 470px 0 55px 0;
+    }
+    .portfolio__item-text .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .portfolio__item-text .text__body .text__descr{
+        margin-top: 10px;
+    }
+    .portfolio__item-img{
+        margin-top: 80px;
+    }
+    .portfolio__cinema-block .phone__images{
+        grid-template-columns: 300px;
+        justify-content: center;
+    }
+    .bread__second-section .container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .bread__second-section .img-2{
+        display: none;
+    }
+    .auto__container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .portfolio__item-text .text__list .item{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,68 @@
+
+
+.infinity__slider{
+  overflow: hidden;
+    padding: 21px 0;
+    border-bottom: 1px dashed #9D84B8;
+    background: #3a3a3a;
+}
+
+.infinity__slider div{
+    width: max-content;
+    color: white;
+    font-size: 30px;
+    letter-spacing: .25em;
+    font-family: 'Roboto', sans-serif;
+    animation: slidein 20s linear infinite;
+}
+
+.bg__black{
+  background: #212025;
+}
+
+.bg__white{
+  background: #EFEFEF;
+}
+
+.about-infinity__slider{
+  margin-top: 135px;
+}
+
+.about-infinity__slider .slider__content{
+  display: flex;
+  gap: 100px;
+}
+
+
+
+.about-infinity__slider .slider__content span{
+  font-size: 40px;
+  color: 
+  rgba(157, 132, 184, .2);
+  letter-spacing: .05em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+
+.portfolio-infinity__slider{
+  margin-top: 135px;
+}
+
+.portfolio-infinity__slider .slider__content{
+  display: flex;
+  gap: 100px;
+}
+
+.portfolio-infinity__slider .slider__content span{
+  color: rgba(33, 32, 37, .2);
+}
+
+@keyframes slidein {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
