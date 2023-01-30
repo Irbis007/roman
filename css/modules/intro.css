@@ -35,6 +35,12 @@
     top: -50px;
 }
 
+@media (min-height: 1500px) {
+    .intro{
+        min-height: 900px;
+    }
+}
+
 @media (max-width: 767px) {
     .intro{
         background: #212025;

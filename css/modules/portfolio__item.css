@@ -248,7 +248,11 @@ body.cinema, body.ice__cream{
     grid-column: 2/3;
 }
 
-
+@media (min-height: 1500px) {
+    .portfolio__item-intro{
+        min-height: 900px;
+    }
+}
 
 
 @media (max-width: 1023px) {
