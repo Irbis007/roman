@@ -24,3 +24,13 @@
     left: -35px;
     mix-blend-mode: difference;
 }
+
+
+@media (max-width: 991px) {
+    #cursor{
+        display: none;
+    }
+    #cursor.active{
+        display: none;
+    }
+}
