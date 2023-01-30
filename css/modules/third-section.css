@@ -49,6 +49,7 @@
 
 .third__section .third__body .third__body-plus{
     position: relative;
+    display: block;
     width: 80px;
     height: 80px;
     margin: 0 auto;

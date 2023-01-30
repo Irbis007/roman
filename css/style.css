@@ -12,6 +12,8 @@
 @import url('modules/portfolio__item.css');
 @import url('modules/policy.css');
 @import url('modules/animation.css');
+@import url('modules/buttons.css');
+@import url('modules/cursor.css');
 
 html{
     scroll-behavior: smooth;
@@ -67,15 +69,6 @@ footer{
     line-height: 140%;
 }
 
-.button{
-    border: 1px solid #9D84B8;
-    color: #9D84B8;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    background: none;
-    border-radius: 10px;
-}
 
 .fw__600{
     font-weight: 600;
@@ -86,31 +79,6 @@ footer{
     border: none;
 }
 
-
-#cursor{
-    position: fixed;
-    width: 14px;
-    height: 14px;
-    background: white;
-    border-radius: 50%;
-    z-index: 10000;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    transform: translate(3px, -25px);
-    transition: width 1s, height 1s, background-color 2s,top 1s, left 1s;
-    top: -7px;
-    left: -7px;
-
-}
-
-#cursor.active{
-    height: 70px;
-    width: 70px;
-    background-color: rgb(198, 101, 246);
-    transition: width 1s, height 1s, background-color 2s, top 1s, left 1s;
-    top: -35px;
-    left: -35px;
-}
 
 @media (max-width: 1023px) {
     .container{

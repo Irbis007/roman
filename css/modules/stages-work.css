@@ -77,3 +77,9 @@
         margin: 0;
     }
 }
+
+@media (min-height: 1050px) {
+    .stages__work{
+        margin-bottom: 200px;
+    }
+}
