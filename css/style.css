@@ -14,6 +14,7 @@
 @import url('modules/animation.css');
 @import url('modules/buttons.css');
 @import url('modules/cursor.css');
+@import url('modules/home-slider.css');
 
 html{
     scroll-behavior: smooth;

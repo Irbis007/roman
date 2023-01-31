@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="cursor" class=""></div>
+    <div id="cursor" class="">
+        <div id="cursor-left-arrow"><img src="./img/icons/cursor-arrow.svg" alt="cursor img"></div>
+        <div id="cursor-right-arrow"><img src="./img/icons/cursor-arrow.svg" alt="cursor img"></div>
+    </div>
 
     <header class="header__home header" id="header">
         <div class="container">
@@ -96,7 +99,21 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="third__body-img img-animations scroll-item"><img src="./img/third.png" alt="third section img"></div>
+                    <div class="slider__wrapper img-animations img-scroll">
+                        <div class="third__section-slider ">
+                            <div class="third__section-slide">
+                                <img src="./img/home-slide1.png" alt="home slide">
+                            </div>
+                            <div class="third__section-slide">
+                                <img src="./img/home-slide2.png" alt="home slide">
+                            </div>
+                            <div class="third__section-slide">
+                                <img src="./img/home-slide3.png" alt="home slide">
+                            </div>
+                        </div>
+                        <button class="home-slider-next"></button>
+                        <button class="home-slider-prev"></button>
+                    </div>
                     <a href="./portfolio.html"class="third__body-plus scroll-item"></a>
                     <div class="third__body-descr descr scroll-item">My ambition has always been to keep evolving, outdoing myself and learning by creating new visual concepts.</div>
                 </div>
@@ -183,6 +200,5 @@
 
 
     <script src="./js/scrip.js"></script>
-    <script src="./js/app.min.js"></script>
 </body>
 </html>

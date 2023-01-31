@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 50%;
+    height: 100%;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -40,6 +40,8 @@
     border: none;
     outline: none;
     background: transparent;
+
+    z-index: 1000;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -88,11 +90,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '';
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '';
 }
 
 .slick-next
@@ -106,11 +108,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '';
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '';
 }
 
 /* Dots */
