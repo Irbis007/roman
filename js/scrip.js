@@ -99,6 +99,12 @@ window.addEventListener('DOMContentLoaded', ()=>{
             })
         })
     }
+    // DELETE ANIMATION ELEMENT
+
+    setTimeout(function() {
+        document.querySelector('.animation__element').remove();
+    }, 900);
+
 
     // SLICK SLIDER
     $('.portfolio__item-slider').slick({
@@ -114,6 +120,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     });
 })
+
+
 
 
 

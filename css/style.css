@@ -15,6 +15,7 @@
 @import url('modules/buttons.css');
 @import url('modules/cursor.css');
 @import url('modules/home-slider.css');
+@import url('modules/upwork.css');
 
 html{
     scroll-behavior: smooth;
