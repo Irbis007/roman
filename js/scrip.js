@@ -43,11 +43,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
     // SCROLL ANIMATION
 	const scrollItems = document.querySelectorAll('.scroll-item');
 
-	const scrollAnimation = () => {
+	const scrollAnimation = (active = false) => {
 		let windowCenter = (window.innerHeight / 2) + window.scrollY;
 		scrollItems.forEach(el => {
 			let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-			if (windowCenter >= scrollOffset) {
+			if (windowCenter >= scrollOffset || active) {
 				el.classList.add('animation-class');
 			} else {
 				el.classList.remove('animation-class');
@@ -57,11 +57,11 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     const imgScroll = document.querySelectorAll('.img-scroll')
 
-    const scrollAnimationImg = () =>{
+    const scrollAnimationImg = (active = false) =>{
 		let windowCenter = (window.innerHeight / 2) + window.scrollY;
 		imgScroll.forEach(el => {
 			let scrollOffset = el.offsetTop;
-			if (windowCenter >= scrollOffset) {
+			if (windowCenter >= scrollOffset || active) {
 				el.classList.add('animation-class');
 			} else {
 				el.classList.remove('animation-class');
@@ -70,22 +70,31 @@ window.addEventListener('DOMContentLoaded', ()=>{
     }
 
     const lastElement = document.querySelectorAll('.last-animation__element')
-	const scrollAnimationLastElement = () => {
+	const scrollAnimationLastElement = (active = false) => {
 		let windowCenter = (window.innerHeight / 1.5) + window.scrollY;
 		lastElement.forEach(el => {
 			let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
-			if (windowCenter >= scrollOffset) {
+			if (windowCenter >= scrollOffset || active) {
 				el.classList.add('animation-class');
 			} else {
 				el.classList.remove('animation-class');
 			}
 		});
 	};
+    function showModalByScroll(){
+        if (window.pageYOffset + document.documentElement.clientHeight >= document.documentElement.scrollHeight -1){
+            scrollAnimation(true);
+            scrollAnimationImg(true);
+            scrollAnimationLastElement(true);
+            window.removeEventListener('scroll', showModalByScroll)
+        }
+    }
 	scrollAnimation();
 	window.addEventListener('scroll', () => {
 		scrollAnimation();
         scrollAnimationImg();
         scrollAnimationLastElement();
+        showModalByScroll()
 	});
 
     // COUSOR
@@ -112,6 +121,8 @@ window.addEventListener('DOMContentLoaded', ()=>{
             })
         })
     }
+
+
     // DELETE ANIMATION ELEMENT
 
     setTimeout(function() {
