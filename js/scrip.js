@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     const lastElement = document.querySelectorAll('.last-animation__element')
 	const scrollAnimationLastElement = () => {
-		let windowCenter = (window.innerHeight / 2) + window.scrollY;
+		let windowCenter = (window.innerHeight / 1.5) + window.scrollY;
 		lastElement.forEach(el => {
 			let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
 			if (windowCenter >= scrollOffset) {
