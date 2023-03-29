@@ -48,15 +48,7 @@
 
 
 
-.header.header__home .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
-.header.header__home .header__nav{
-    margin: 0;
-}
 
 .header .header__nav .hamburger{
     display: none;
