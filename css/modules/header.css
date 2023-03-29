@@ -9,6 +9,7 @@
     width: 100%;
     color: white;
     font-family: 'Roboto', sans-serif;
+    animation: showContent 1.2s;
 }
 
 .header .header__nav{
@@ -93,6 +94,15 @@
     height: 20px;
 }
 
+@keyframes showContent {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1023px) {
     .header.header__home .header__nav{
         display: grid;
@@ -113,6 +123,11 @@
     .header .header__year{
         display: none;
     }
+}
+
+.header .header__year{
+    opacity: 0;
+    animation: showContent .6s  .8s forwards;
 }
 
 
