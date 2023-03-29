@@ -69,10 +69,23 @@ window.addEventListener('DOMContentLoaded', ()=>{
 		});
     }
 
+    const lastElement = document.querySelectorAll('.last-animation__element')
+	const scrollAnimationLastElement = () => {
+		let windowCenter = (window.innerHeight / 2) + window.scrollY;
+		lastElement.forEach(el => {
+			let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+			if (windowCenter >= scrollOffset) {
+				el.classList.add('animation-class');
+			} else {
+				el.classList.remove('animation-class');
+			}
+		});
+	};
 	scrollAnimation();
 	window.addEventListener('scroll', () => {
 		scrollAnimation();
         scrollAnimationImg();
+        scrollAnimationLastElement();
 	});
 
     // COUSOR
