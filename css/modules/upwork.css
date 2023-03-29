@@ -5,7 +5,20 @@
 }
 
 .upwork .upwork__button{
-    padding: 10px 55px ;
     margin: 0 auto;
     margin-top: 40px;
+}
+
+.upwork .upwork__button a{
+    text-decoration: none;
+    color: #9D84B8;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 55px ;
+    transition: all .15s;
+}
+
+.upwork .upwork__button a:hover{
+    color: #000;
 }
