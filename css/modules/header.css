@@ -9,7 +9,8 @@
     width: 100%;
     color: white;
     font-family: 'Roboto', sans-serif;
-    animation: showContent 1.2s;
+    opacity: 0;
+    animation: showContent .6s .7s cubic-bezier(.9,.03,.69,.22) forwards;
 }
 
 .header .header__nav{

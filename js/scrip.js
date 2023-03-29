@@ -116,7 +116,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
 
     setTimeout(function() {
         document.querySelector('.animation__element').remove();
-    }, 900);
+    }, 1500);
 
 
     // SLICK SLIDER
